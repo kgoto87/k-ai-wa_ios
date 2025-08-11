@@ -1,0 +1,25 @@
+name: KAiWaMemo
+options:
+  deploymentTarget:
+    iOS: 16.0
+targets:
+  KAiWaMemo:
+    type: application
+    platform: iOS
+    sources:
+      - path: KAiWaMemo/KAiWaMemo
+      - path: KAiWaMemo/Resources/GoogleService-Info.plist
+        buildPhase: resources
+    settings:
+      base:
+        PRODUCT_BUNDLE_IDENTIFIER: com.example.KAiWaMemo
+        GENERATE_INFOPLIST_FILE: YES
+    dependencies:
+      - package: Firebase
+        product: FirebaseAuth
+      - package: Firebase
+        product: FirebaseFirestore
+packages:
+  Firebase:
+    url: https://github.com/firebase/firebase-ios-sdk.git
+    from: "10.22.0"
