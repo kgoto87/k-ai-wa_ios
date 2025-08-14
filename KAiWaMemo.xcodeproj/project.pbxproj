@@ -7,172 +7,304 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		0A55363A88480035BC181C90 /* FirebaseManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D7AB3F74EB1F808AAB12616 /* FirebaseManager.swift */; };
-		7EF0D52E6A1AA0B7D7C73AD8 /* ContentViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B815B402F497815C62BAAF2D /* ContentViewModel.swift */; };
-		A1F82875496AAD2CAC3500B1 /* FirebaseFirestore in Frameworks */ = {isa = PBXBuildFile; productRef = E73F874F1FAAF13FD6859212 /* FirebaseFirestore */; };
-		AB179B5C785CE326AF3EE603 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = FE9B7BBC6E7E682B0D1BB6E1 /* GoogleService-Info.plist */; };
-		C627DCBAAC87BC060B6BA747 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A35C9BE9A3E913945DA1A788 /* ContentView.swift */; };
-		EC1212EE0A32DB449068E40B /* FirebaseAuth in Frameworks */ = {isa = PBXBuildFile; productRef = 6F6D0454DD409E42F9E24F7F /* FirebaseAuth */; };
-		F3E33A6CAAB0273D1D224CF7 /* KAIWAMemoApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F886719C4E0BA7F1F1A0900 /* KAIWAMemoApp.swift */; };
+		28B592BB2E4D8C1F0094EF86 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 28B592B52E4D8C1F0094EF86 /* GoogleService-Info.plist */; };
+		28B592CE2E4E1D8E0094EF86 /* FirebaseAuth in Frameworks */ = {isa = PBXBuildFile; productRef = 28B592CD2E4E1D8E0094EF86 /* FirebaseAuth */; };
+		28B592D02E4E1D8E0094EF86 /* FirebaseFirestore in Frameworks */ = {isa = PBXBuildFile; productRef = 28B592CF2E4E1D8E0094EF86 /* FirebaseFirestore */; };
+		28B592D32E4E1DDA0094EF86 /* GoogleSignIn in Frameworks */ = {isa = PBXBuildFile; productRef = 28B592D22E4E1DDA0094EF86 /* GoogleSignIn */; };
 /* End PBXBuildFile section */
 
+/* Begin PBXContainerItemProxy section */
+		28B5927E2E4D402F0094EF86 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 28B592682E4D402E0094EF86 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 28B5926F2E4D402E0094EF86;
+			remoteInfo = KAiWaMemo;
+		};
+		28B592882E4D402F0094EF86 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 28B592682E4D402E0094EF86 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 28B5926F2E4D402E0094EF86;
+			remoteInfo = KAiWaMemo;
+		};
+/* End PBXContainerItemProxy section */
+
 /* Begin PBXFileReference section */
-		5D7AB3F74EB1F808AAB12616 /* FirebaseManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirebaseManager.swift; sourceTree = "<group>"; };
-		65FD1D1C51951D85B1AB3108 /* KAiWaMemo.app */ = {isa = PBXFileReference; includeInIndex = 0; lastKnownFileType = wrapper.application; path = KAiWaMemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		8F886719C4E0BA7F1F1A0900 /* KAIWAMemoApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KAIWAMemoApp.swift; sourceTree = "<group>"; };
-		A35C9BE9A3E913945DA1A788 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
-		B815B402F497815C62BAAF2D /* ContentViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentViewModel.swift; sourceTree = "<group>"; };
-		FE9B7BBC6E7E682B0D1BB6E1 /* GoogleService-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		28B592702E4D402E0094EF86 /* KAiWaMemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = KAiWaMemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		28B5927D2E4D402F0094EF86 /* KAiWaMemoTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = KAiWaMemoTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		28B592872E4D402F0094EF86 /* KAiWaMemoUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = KAiWaMemoUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		28B592B52E4D8C1F0094EF86 /* GoogleService-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
+/* Begin PBXFileSystemSynchronizedRootGroup section */
+		28B592722E4D402E0094EF86 /* KAiWaMemo */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			path = KAiWaMemo;
+			sourceTree = "<group>";
+		};
+		28B592802E4D402F0094EF86 /* KAiWaMemoTests */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			path = KAiWaMemoTests;
+			sourceTree = "<group>";
+		};
+		28B5928A2E4D402F0094EF86 /* KAiWaMemoUITests */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			path = KAiWaMemoUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXFileSystemSynchronizedRootGroup section */
+
 /* Begin PBXFrameworksBuildPhase section */
-		309E938DF898DAD703D5F43F /* Frameworks */ = {
+		28B5926D2E4D402E0094EF86 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				EC1212EE0A32DB449068E40B /* FirebaseAuth in Frameworks */,
-				A1F82875496AAD2CAC3500B1 /* FirebaseFirestore in Frameworks */,
+				28B592CE2E4E1D8E0094EF86 /* FirebaseAuth in Frameworks */,
+				28B592D02E4E1D8E0094EF86 /* FirebaseFirestore in Frameworks */,
+				28B592D32E4E1DDA0094EF86 /* GoogleSignIn in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		28B5927A2E4D402F0094EF86 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		28B592842E4D402F0094EF86 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		90A0AA75E637BD606036CA6C /* KAiWaMemo */ = {
+		28B592672E4D402E0094EF86 = {
 			isa = PBXGroup;
 			children = (
-				A35C9BE9A3E913945DA1A788 /* ContentView.swift */,
-				B815B402F497815C62BAAF2D /* ContentViewModel.swift */,
-				8F886719C4E0BA7F1F1A0900 /* KAIWAMemoApp.swift */,
-				DAC5F0A6B55DCF8897F14BA1 /* Firebase */,
-			);
-			name = KAiWaMemo;
-			path = KAiWaMemo/KAiWaMemo;
-			sourceTree = "<group>";
-		};
-		B15E7F61761CDD504D4C92D3 = {
-			isa = PBXGroup;
-			children = (
-				90A0AA75E637BD606036CA6C /* KAiWaMemo */,
-				CDD6CC1246BA7F28BA8F4178 /* Resources */,
-				B9AF82EA73E0E600DD822F43 /* Products */,
+				28B592B62E4D8C1F0094EF86 /* Resources */,
+				28B592722E4D402E0094EF86 /* KAiWaMemo */,
+				28B592802E4D402F0094EF86 /* KAiWaMemoTests */,
+				28B5928A2E4D402F0094EF86 /* KAiWaMemoUITests */,
+				28B592712E4D402E0094EF86 /* Products */,
 			);
 			sourceTree = "<group>";
 		};
-		B9AF82EA73E0E600DD822F43 /* Products */ = {
+		28B592712E4D402E0094EF86 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				65FD1D1C51951D85B1AB3108 /* KAiWaMemo.app */,
+				28B592702E4D402E0094EF86 /* KAiWaMemo.app */,
+				28B5927D2E4D402F0094EF86 /* KAiWaMemoTests.xctest */,
+				28B592872E4D402F0094EF86 /* KAiWaMemoUITests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		CDD6CC1246BA7F28BA8F4178 /* Resources */ = {
+		28B592B62E4D8C1F0094EF86 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
-				FE9B7BBC6E7E682B0D1BB6E1 /* GoogleService-Info.plist */,
+				28B592B52E4D8C1F0094EF86 /* GoogleService-Info.plist */,
 			);
-			name = Resources;
-			path = KAiWaMemo/Resources;
-			sourceTree = "<group>";
-		};
-		DAC5F0A6B55DCF8897F14BA1 /* Firebase */ = {
-			isa = PBXGroup;
-			children = (
-				5D7AB3F74EB1F808AAB12616 /* FirebaseManager.swift */,
-			);
-			path = Firebase;
+			path = Resources;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		61E90A174A038A45C4B64477 /* KAiWaMemo */ = {
+		28B5926F2E4D402E0094EF86 /* KAiWaMemo */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 9BF5529B9B4C6E50BD785CA3 /* Build configuration list for PBXNativeTarget "KAiWaMemo" */;
+			buildConfigurationList = 28B592912E4D402F0094EF86 /* Build configuration list for PBXNativeTarget "KAiWaMemo" */;
 			buildPhases = (
-				7573B45A8A9C91D2BBDD1DB2 /* Sources */,
-				DE41D8B316E61ADF7FA97C95 /* Resources */,
-				309E938DF898DAD703D5F43F /* Frameworks */,
+				28B5926C2E4D402E0094EF86 /* Sources */,
+				28B5926D2E4D402E0094EF86 /* Frameworks */,
+				28B5926E2E4D402E0094EF86 /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 			);
+			fileSystemSynchronizedGroups = (
+				28B592722E4D402E0094EF86 /* KAiWaMemo */,
+			);
 			name = KAiWaMemo;
 			packageProductDependencies = (
-				6F6D0454DD409E42F9E24F7F /* FirebaseAuth */,
-				E73F874F1FAAF13FD6859212 /* FirebaseFirestore */,
+				28B592CD2E4E1D8E0094EF86 /* FirebaseAuth */,
+				28B592CF2E4E1D8E0094EF86 /* FirebaseFirestore */,
+				28B592D22E4E1DDA0094EF86 /* GoogleSignIn */,
 			);
 			productName = KAiWaMemo;
-			productReference = 65FD1D1C51951D85B1AB3108 /* KAiWaMemo.app */;
+			productReference = 28B592702E4D402E0094EF86 /* KAiWaMemo.app */;
 			productType = "com.apple.product-type.application";
+		};
+		28B5927C2E4D402F0094EF86 /* KAiWaMemoTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 28B592942E4D402F0094EF86 /* Build configuration list for PBXNativeTarget "KAiWaMemoTests" */;
+			buildPhases = (
+				28B592792E4D402F0094EF86 /* Sources */,
+				28B5927A2E4D402F0094EF86 /* Frameworks */,
+				28B5927B2E4D402F0094EF86 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				28B5927F2E4D402F0094EF86 /* PBXTargetDependency */,
+			);
+			fileSystemSynchronizedGroups = (
+				28B592802E4D402F0094EF86 /* KAiWaMemoTests */,
+			);
+			name = KAiWaMemoTests;
+			packageProductDependencies = (
+			);
+			productName = KAiWaMemoTests;
+			productReference = 28B5927D2E4D402F0094EF86 /* KAiWaMemoTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		28B592862E4D402F0094EF86 /* KAiWaMemoUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 28B592972E4D402F0094EF86 /* Build configuration list for PBXNativeTarget "KAiWaMemoUITests" */;
+			buildPhases = (
+				28B592832E4D402F0094EF86 /* Sources */,
+				28B592842E4D402F0094EF86 /* Frameworks */,
+				28B592852E4D402F0094EF86 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				28B592892E4D402F0094EF86 /* PBXTargetDependency */,
+			);
+			fileSystemSynchronizedGroups = (
+				28B5928A2E4D402F0094EF86 /* KAiWaMemoUITests */,
+			);
+			name = KAiWaMemoUITests;
+			packageProductDependencies = (
+			);
+			productName = KAiWaMemoUITests;
+			productReference = 28B592872E4D402F0094EF86 /* KAiWaMemoUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
 		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
-		340DFB4B42932E4E2C820200 /* Project object */ = {
+		28B592682E4D402E0094EF86 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				BuildIndependentTargetsInParallel = YES;
-				LastUpgradeCheck = 1430;
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1640;
+				LastUpgradeCheck = 1640;
+				TargetAttributes = {
+					28B5926F2E4D402E0094EF86 = {
+						CreatedOnToolsVersion = 16.4;
+					};
+					28B5927C2E4D402F0094EF86 = {
+						CreatedOnToolsVersion = 16.4;
+						TestTargetID = 28B5926F2E4D402E0094EF86;
+					};
+					28B592862E4D402F0094EF86 = {
+						CreatedOnToolsVersion = 16.4;
+						TestTargetID = 28B5926F2E4D402E0094EF86;
+					};
+				};
 			};
-			buildConfigurationList = C90F7E0BC7281D4EC9AEB121 /* Build configuration list for PBXProject "KAiWaMemo" */;
-			compatibilityVersion = "Xcode 14.0";
+			buildConfigurationList = 28B5926B2E4D402E0094EF86 /* Build configuration list for PBXProject "KAiWaMemo" */;
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
 			knownRegions = (
-				Base,
 				en,
+				Base,
 			);
-			mainGroup = B15E7F61761CDD504D4C92D3;
+			mainGroup = 28B592672E4D402E0094EF86;
 			minimizedProjectReferenceProxies = 1;
 			packageReferences = (
-				1BB4FE7658F07297F99BAC47 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */,
+				28B592CC2E4E1D8E0094EF86 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */,
+				28B592D12E4E1DDA0094EF86 /* XCRemoteSwiftPackageReference "GoogleSignIn-iOS" */,
 			);
 			preferredProjectObjectVersion = 77;
+			productRefGroup = 28B592712E4D402E0094EF86 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				61E90A174A038A45C4B64477 /* KAiWaMemo */,
+				28B5926F2E4D402E0094EF86 /* KAiWaMemo */,
+				28B5927C2E4D402F0094EF86 /* KAiWaMemoTests */,
+				28B592862E4D402F0094EF86 /* KAiWaMemoUITests */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
-		DE41D8B316E61ADF7FA97C95 /* Resources */ = {
+		28B5926E2E4D402E0094EF86 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				AB179B5C785CE326AF3EE603 /* GoogleService-Info.plist in Resources */,
+				28B592BB2E4D8C1F0094EF86 /* GoogleService-Info.plist in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		28B5927B2E4D402F0094EF86 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		28B592852E4D402F0094EF86 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
-		7573B45A8A9C91D2BBDD1DB2 /* Sources */ = {
+		28B5926C2E4D402E0094EF86 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C627DCBAAC87BC060B6BA747 /* ContentView.swift in Sources */,
-				7EF0D52E6A1AA0B7D7C73AD8 /* ContentViewModel.swift in Sources */,
-				0A55363A88480035BC181C90 /* FirebaseManager.swift in Sources */,
-				F3E33A6CAAB0273D1D224CF7 /* KAIWAMemoApp.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		28B592792E4D402F0094EF86 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		28B592832E4D402F0094EF86 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
+/* Begin PBXTargetDependency section */
+		28B5927F2E4D402F0094EF86 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 28B5926F2E4D402E0094EF86 /* KAiWaMemo */;
+			targetProxy = 28B5927E2E4D402F0094EF86 /* PBXContainerItemProxy */;
+		};
+		28B592892E4D402F0094EF86 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 28B5926F2E4D402E0094EF86 /* KAiWaMemo */;
+			targetProxy = 28B592882E4D402F0094EF86 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
 /* Begin XCBuildConfiguration section */
-		98F1EE1ED2327A47BCE32188 /* Debug */ = {
+		28B5928F2E4D402F0094EF86 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
-				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
-				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
 				CLANG_ENABLE_MODULES = YES;
 				CLANG_ENABLE_OBJC_ARC = YES;
 				CLANG_ENABLE_OBJC_WEAK = YES;
@@ -202,13 +334,14 @@
 				DEBUG_INFORMATION_FORMAT = dwarf;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				ENABLE_TESTABILITY = YES;
-				GCC_C_LANGUAGE_STANDARD = gnu11;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_NO_COMMON_BLOCKS = YES;
 				GCC_OPTIMIZATION_LEVEL = 0;
 				GCC_PREPROCESSOR_DEFINITIONS = (
-					"$(inherited)",
 					"DEBUG=1",
+					"$(inherited)",
 				);
 				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
 				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
@@ -216,26 +349,25 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 18.5;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
-				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = iphoneos;
-				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
-				SWIFT_VERSION = 5.0;
 			};
 			name = Debug;
 		};
-		C6FBACAA926F41827DBD530D /* Release */ = {
+		28B592902E4D402F0094EF86 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
-				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
-				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
 				CLANG_ENABLE_MODULES = YES;
 				CLANG_ENABLE_OBJC_ARC = YES;
 				CLANG_ENABLE_OBJC_WEAK = YES;
@@ -265,7 +397,8 @@
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				ENABLE_NS_ASSERTIONS = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				GCC_C_LANGUAGE_STANDARD = gnu11;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
 				GCC_NO_COMMON_BLOCKS = YES;
 				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
 				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
@@ -273,95 +406,217 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 18.5;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
-				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = iphoneos;
 				SWIFT_COMPILATION_MODE = wholemodule;
-				SWIFT_OPTIMIZATION_LEVEL = "-O";
-				SWIFT_VERSION = 5.0;
+				VALIDATE_PRODUCT = YES;
 			};
 			name = Release;
 		};
-		D732D71378E719FB516DEDD7 /* Debug */ = {
+		28B592922E4D402F0094EF86 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_IDENTITY = "iPhone Developer";
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "";
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.example.KAiWaMemo;
-				SDKROOT = iphoneos;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.mydodes.KAiWaMemo;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
 		};
-		F9A3EFEC93B0F3F3D6F0B3C4 /* Release */ = {
+		28B592932E4D402F0094EF86 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_IDENTITY = "iPhone Developer";
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "";
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.example.KAiWaMemo;
-				SDKROOT = iphoneos;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.mydodes.KAiWaMemo;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		28B592952E4D402F0094EF86 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 18.5;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.mydodes.KAiWaMemoTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/KAiWaMemo.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/KAiWaMemo";
+			};
+			name = Debug;
+		};
+		28B592962E4D402F0094EF86 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 18.5;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.mydodes.KAiWaMemoTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/KAiWaMemo.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/KAiWaMemo";
+			};
+			name = Release;
+		};
+		28B592982E4D402F0094EF86 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.mydodes.KAiWaMemoUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = KAiWaMemo;
+			};
+			name = Debug;
+		};
+		28B592992E4D402F0094EF86 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.mydodes.KAiWaMemoUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = KAiWaMemo;
 			};
 			name = Release;
 		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		9BF5529B9B4C6E50BD785CA3 /* Build configuration list for PBXNativeTarget "KAiWaMemo" */ = {
+		28B5926B2E4D402E0094EF86 /* Build configuration list for PBXProject "KAiWaMemo" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				D732D71378E719FB516DEDD7 /* Debug */,
-				F9A3EFEC93B0F3F3D6F0B3C4 /* Release */,
+				28B5928F2E4D402F0094EF86 /* Debug */,
+				28B592902E4D402F0094EF86 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Debug;
+			defaultConfigurationName = Release;
 		};
-		C90F7E0BC7281D4EC9AEB121 /* Build configuration list for PBXProject "KAiWaMemo" */ = {
+		28B592912E4D402F0094EF86 /* Build configuration list for PBXNativeTarget "KAiWaMemo" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				98F1EE1ED2327A47BCE32188 /* Debug */,
-				C6FBACAA926F41827DBD530D /* Release */,
+				28B592922E4D402F0094EF86 /* Debug */,
+				28B592932E4D402F0094EF86 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Debug;
+			defaultConfigurationName = Release;
+		};
+		28B592942E4D402F0094EF86 /* Build configuration list for PBXNativeTarget "KAiWaMemoTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				28B592952E4D402F0094EF86 /* Debug */,
+				28B592962E4D402F0094EF86 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		28B592972E4D402F0094EF86 /* Build configuration list for PBXNativeTarget "KAiWaMemoUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				28B592982E4D402F0094EF86 /* Debug */,
+				28B592992E4D402F0094EF86 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 
 /* Begin XCRemoteSwiftPackageReference section */
-		1BB4FE7658F07297F99BAC47 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */ = {
+		28B592CC2E4E1D8E0094EF86 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/firebase/firebase-ios-sdk.git";
 			requirement = {
 				kind = upToNextMajorVersion;
-				minimumVersion = 10.22.0;
+				minimumVersion = 12.1.0;
+			};
+		};
+		28B592D12E4E1DDA0094EF86 /* XCRemoteSwiftPackageReference "GoogleSignIn-iOS" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/google/GoogleSignIn-iOS.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 9.0.0;
 			};
 		};
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
-		6F6D0454DD409E42F9E24F7F /* FirebaseAuth */ = {
+		28B592CD2E4E1D8E0094EF86 /* FirebaseAuth */ = {
 			isa = XCSwiftPackageProductDependency;
-			package = 1BB4FE7658F07297F99BAC47 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			package = 28B592CC2E4E1D8E0094EF86 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
 			productName = FirebaseAuth;
 		};
-		E73F874F1FAAF13FD6859212 /* FirebaseFirestore */ = {
+		28B592CF2E4E1D8E0094EF86 /* FirebaseFirestore */ = {
 			isa = XCSwiftPackageProductDependency;
-			package = 1BB4FE7658F07297F99BAC47 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			package = 28B592CC2E4E1D8E0094EF86 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
 			productName = FirebaseFirestore;
+		};
+		28B592D22E4E1DDA0094EF86 /* GoogleSignIn */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 28B592D12E4E1DDA0094EF86 /* XCRemoteSwiftPackageReference "GoogleSignIn-iOS" */;
+			productName = GoogleSignIn;
 		};
 /* End XCSwiftPackageProductDependency section */
 	};
-	rootObject = 340DFB4B42932E4E2C820200 /* Project object */;
+	rootObject = 28B592682E4D402E0094EF86 /* Project object */;
 }
