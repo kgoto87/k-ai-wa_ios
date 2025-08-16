@@ -2,6 +2,7 @@ import SwiftUI
 
 struct ContentView: View {
     @StateObject private var viewModel = ContentViewModel()
+    @EnvironmentObject var authViewModel: AuthenticationViewModel
 
     var body: some View {
         VStack {
@@ -11,13 +12,11 @@ struct ContentView: View {
             Button("Write to Firestore") {
                 viewModel.writeToFirestore()
             }
-        }
-        .alert(isPresented: $viewModel.showAlert) {
-            Alert(
-                title: Text("Error"),
-                message: Text(viewModel.errorMessage),
-                dismissButton: .default(Text("OK"))
-            )
+
+            Button("Sign Out") {
+                authViewModel.signOut()
+            }
+            .padding()
         }
     }
 }
@@ -25,5 +24,6 @@ struct ContentView: View {
 struct ContentView_Previews: PreviewProvider {
     static var previews: some View {
         ContentView()
+            .environmentObject(AuthenticationViewModel())
     }
 }
