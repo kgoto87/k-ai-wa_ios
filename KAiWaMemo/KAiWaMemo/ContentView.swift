@@ -1,18 +1,11 @@
 import SwiftUI
 
 struct ContentView: View {
-    @StateObject private var viewModel = ContentViewModel()
     @EnvironmentObject var authViewModel: AuthenticationViewModel
 
     var body: some View {
         VStack {
-            Text(viewModel.message)
-                .padding()
-
-            Button("Write to Firestore") {
-                viewModel.writeToFirestore()
-            }
-
+            ClientListView()
             Button("Sign Out") {
                 authViewModel.signOut()
             }
