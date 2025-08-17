@@ -64,3 +64,6 @@ fastlane/test_output
 # Firebase
 firebase-debug.log
 firestore-debug.log
+
+# Ignore GoogleService-Info.plist
+GoogleService-Info.plist
