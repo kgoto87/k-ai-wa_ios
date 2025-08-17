@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 63;
+	objectVersion = 70;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -26,14 +26,14 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		4E47E268D0B0830E265A07E9 /* PBXContainerItemProxy */ = {
+		282B1AB12E519E4600344BED /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 340DFB4B42932E4E2C820200 /* Project object */;
 			proxyType = 1;
 			remoteGlobalIDString = 61E90A174A038A45C4B64477;
 			remoteInfo = KAiWaMemo;
 		};
-		BA34A5CB4BD2D2493BA25659 /* PBXContainerItemProxy */ = {
+		282B1ABE2E51A27500344BED /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 340DFB4B42932E4E2C820200 /* Project object */;
 			proxyType = 1;
@@ -47,6 +47,8 @@
 		19DD0E7163D3B940F6334B65 /* EditClientView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditClientView.swift; sourceTree = "<group>"; };
 		282B1A982E51944100344BED /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = Info.plist; path = KAiWaMemo/Info.plist; sourceTree = SOURCE_ROOT; };
 		282B1A9A2E5194B800344BED /* GoogleService-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		282B1AAB2E519E4600344BED /* KAiWaMemoUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = KAiWaMemoUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		282B1ABA2E51A27500344BED /* KAiWaMemoUnitTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = KAiWaMemoUnitTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		4E17DD8252C071F18E6AF72C /* Client.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Client.swift; sourceTree = "<group>"; };
 		4E5585670332FB3AE558166C /* ClientListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClientListView.swift; sourceTree = "<group>"; };
 		5D7AB3F74EB1F808AAB12616 /* FirebaseManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirebaseManager.swift; sourceTree = "<group>"; };
@@ -55,13 +57,30 @@
 		7F4573C799D920028E9BF3F4 /* AuthenticationViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthenticationViewModel.swift; sourceTree = "<group>"; };
 		8F886719C4E0BA7F1F1A0900 /* KAIWAMemoApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KAIWAMemoApp.swift; sourceTree = "<group>"; };
 		A35C9BE9A3E913945DA1A788 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
-		A657A86ACA23153EE62F9C6B /* KAiWaMemoUITests.xctest */ = {isa = PBXFileReference; includeInIndex = 0; lastKnownFileType = wrapper.cfbundle; path = KAiWaMemoUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		B815B402F497815C62BAAF2D /* ContentViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentViewModel.swift; sourceTree = "<group>"; };
-		DCB9D12CBE9261226F560EAE /* KAiWaMemoTests.xctest */ = {isa = PBXFileReference; includeInIndex = 0; lastKnownFileType = wrapper.cfbundle; path = KAiWaMemoTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		EB7C9B8B51E8FD146659D3D6 /* ClientViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClientViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
+/* Begin PBXFileSystemSynchronizedRootGroup section */
+		282B1AAC2E519E4600344BED /* KAiWaMemoUITests */ = {isa = PBXFileSystemSynchronizedRootGroup; explicitFileTypes = {}; explicitFolders = (); path = KAiWaMemoUITests; sourceTree = "<group>"; };
+		282B1ABB2E51A27500344BED /* KAiWaMemoUnitTests */ = {isa = PBXFileSystemSynchronizedRootGroup; explicitFileTypes = {}; explicitFolders = (); path = KAiWaMemoUnitTests; sourceTree = "<group>"; };
+/* End PBXFileSystemSynchronizedRootGroup section */
+
 /* Begin PBXFrameworksBuildPhase section */
+		282B1AA82E519E4600344BED /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		282B1AB72E51A27500344BED /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		309E938DF898DAD703D5F43F /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -92,14 +111,6 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
-		6A056437B8BA22547B4F9853 /* KAiWaMemoUITests */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			name = KAiWaMemoUITests;
-			path = KAiWaMemo/KAiWaMemoUITests;
-			sourceTree = "<group>";
-		};
 		90A0AA75E637BD606036CA6C /* KAiWaMemo */ = {
 			isa = PBXGroup;
 			children = (
@@ -120,21 +131,13 @@
 			path = KAiWaMemo/KAiWaMemo;
 			sourceTree = "<group>";
 		};
-		ADBE7122DA49B96A9E5B0349 /* KAiWaMemoTests */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			name = KAiWaMemoTests;
-			path = KAiWaMemo/KAiWaMemoTests;
-			sourceTree = "<group>";
-		};
 		B15E7F61761CDD504D4C92D3 = {
 			isa = PBXGroup;
 			children = (
 				282B1A9B2E5194B800344BED /* Resources */,
 				90A0AA75E637BD606036CA6C /* KAiWaMemo */,
-				ADBE7122DA49B96A9E5B0349 /* KAiWaMemoTests */,
-				6A056437B8BA22547B4F9853 /* KAiWaMemoUITests */,
+				282B1AAC2E519E4600344BED /* KAiWaMemoUITests */,
+				282B1ABB2E51A27500344BED /* KAiWaMemoUnitTests */,
 				B9AF82EA73E0E600DD822F43 /* Products */,
 				282B1A9D2E5194E200344BED /* Frameworks */,
 			);
@@ -144,8 +147,8 @@
 			isa = PBXGroup;
 			children = (
 				65FD1D1C51951D85B1AB3108 /* KAiWaMemo.app */,
-				DCB9D12CBE9261226F560EAE /* KAiWaMemoTests.xctest */,
-				A657A86ACA23153EE62F9C6B /* KAiWaMemoUITests.xctest */,
+				282B1AAB2E519E4600344BED /* KAiWaMemoUITests.xctest */,
+				282B1ABA2E51A27500344BED /* KAiWaMemoUnitTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -161,23 +164,51 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		363C4CC36A17F6179FDA9188 /* KAiWaMemoUITests */ = {
+		282B1AAA2E519E4600344BED /* KAiWaMemoUITests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 63C94596EB350BD037B52FEA /* Build configuration list for PBXNativeTarget "KAiWaMemoUITests" */;
+			buildConfigurationList = 282B1AB32E519E4600344BED /* Build configuration list for PBXNativeTarget "KAiWaMemoUITests" */;
 			buildPhases = (
-				D0D8AD55DD1007C4B690094D /* Sources */,
+				282B1AA72E519E4600344BED /* Sources */,
+				282B1AA82E519E4600344BED /* Frameworks */,
+				282B1AA92E519E4600344BED /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				8A9E51478F2ED3547D958996 /* PBXTargetDependency */,
+				282B1AB22E519E4600344BED /* PBXTargetDependency */,
+			);
+			fileSystemSynchronizedGroups = (
+				282B1AAC2E519E4600344BED /* KAiWaMemoUITests */,
 			);
 			name = KAiWaMemoUITests;
 			packageProductDependencies = (
 			);
 			productName = KAiWaMemoUITests;
-			productReference = A657A86ACA23153EE62F9C6B /* KAiWaMemoUITests.xctest */;
+			productReference = 282B1AAB2E519E4600344BED /* KAiWaMemoUITests.xctest */;
 			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+		282B1AB92E51A27500344BED /* KAiWaMemoUnitTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 282B1AC02E51A27500344BED /* Build configuration list for PBXNativeTarget "KAiWaMemoUnitTests" */;
+			buildPhases = (
+				282B1AB62E51A27500344BED /* Sources */,
+				282B1AB72E51A27500344BED /* Frameworks */,
+				282B1AB82E51A27500344BED /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				282B1ABF2E51A27500344BED /* PBXTargetDependency */,
+			);
+			fileSystemSynchronizedGroups = (
+				282B1ABB2E51A27500344BED /* KAiWaMemoUnitTests */,
+			);
+			name = KAiWaMemoUnitTests;
+			packageProductDependencies = (
+			);
+			productName = KAiWaMemoUnitTests;
+			productReference = 282B1ABA2E51A27500344BED /* KAiWaMemoUnitTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
 		};
 		61E90A174A038A45C4B64477 /* KAiWaMemo */ = {
 			isa = PBXNativeTarget;
@@ -202,24 +233,6 @@
 			productReference = 65FD1D1C51951D85B1AB3108 /* KAiWaMemo.app */;
 			productType = "com.apple.product-type.application";
 		};
-		E27FE5488CE69F2B6C9C124E /* KAiWaMemoTests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 17B31668DD4CCF4CA4E77295 /* Build configuration list for PBXNativeTarget "KAiWaMemoTests" */;
-			buildPhases = (
-				96A01A588CEF5520F52D3FD6 /* Sources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				F4A2DDA17FCD967222B20697 /* PBXTargetDependency */,
-			);
-			name = KAiWaMemoTests;
-			packageProductDependencies = (
-			);
-			productName = KAiWaMemoTests;
-			productReference = DCB9D12CBE9261226F560EAE /* KAiWaMemoTests.xctest */;
-			productType = "com.apple.product-type.bundle.unit-test";
-		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -227,9 +240,15 @@
 			isa = PBXProject;
 			attributes = {
 				BuildIndependentTargetsInParallel = YES;
+				LastSwiftUpdateCheck = 1640;
 				LastUpgradeCheck = 1430;
 				TargetAttributes = {
-					363C4CC36A17F6179FDA9188 = {
+					282B1AAA2E519E4600344BED = {
+						CreatedOnToolsVersion = 16.4;
+						TestTargetID = 61E90A174A038A45C4B64477;
+					};
+					282B1AB92E51A27500344BED = {
+						CreatedOnToolsVersion = 16.4;
 						TestTargetID = 61E90A174A038A45C4B64477;
 					};
 				};
@@ -252,8 +271,8 @@
 			projectRoot = "";
 			targets = (
 				61E90A174A038A45C4B64477 /* KAiWaMemo */,
-				E27FE5488CE69F2B6C9C124E /* KAiWaMemoTests */,
-				363C4CC36A17F6179FDA9188 /* KAiWaMemoUITests */,
+				282B1AAA2E519E4600344BED /* KAiWaMemoUITests */,
+				282B1AB92E51A27500344BED /* KAiWaMemoUnitTests */,
 			);
 		};
 /* End PBXProject section */
@@ -267,9 +286,37 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		282B1AA92E519E4600344BED /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		282B1AB82E51A27500344BED /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		282B1AA72E519E4600344BED /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		282B1AB62E51A27500344BED /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		7573B45A8A9C91D2BBDD1DB2 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -288,81 +335,121 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		96A01A588CEF5520F52D3FD6 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		D0D8AD55DD1007C4B690094D /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		8A9E51478F2ED3547D958996 /* PBXTargetDependency */ = {
+		282B1AB22E519E4600344BED /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = 61E90A174A038A45C4B64477 /* KAiWaMemo */;
-			targetProxy = BA34A5CB4BD2D2493BA25659 /* PBXContainerItemProxy */;
+			targetProxy = 282B1AB12E519E4600344BED /* PBXContainerItemProxy */;
 		};
-		F4A2DDA17FCD967222B20697 /* PBXTargetDependency */ = {
+		282B1ABF2E51A27500344BED /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = 61E90A174A038A45C4B64477 /* KAiWaMemo */;
-			targetProxy = 4E47E268D0B0830E265A07E9 /* PBXContainerItemProxy */;
+			targetProxy = 282B1ABE2E51A27500344BED /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
-		39D0995C34F74853C51B196F /* Release */ = {
+		282B1AB42E519E4600344BED /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				BUNDLE_LOADER = "$(TEST_HOST)";
-				GENERATE_INFOPLIST_FILE = YES;
-				LD_RUNPATH_SEARCH_PATHS = (
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
 					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
 				);
-				SDKROOT = iphoneos;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_TARGET_NAME = KAiWaMemo;
-			};
-			name = Release;
-		};
-		4BD2CB0536C7646DBE21EEE3 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				BUNDLE_LOADER = "$(TEST_HOST)";
 				GENERATE_INFOPLIST_FILE = YES;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
-				SDKROOT = iphoneos;
+				IPHONEOS_DEPLOYMENT_TARGET = 18.5;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.example.KAiWaMemoUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				TEST_TARGET_NAME = KAiWaMemo;
 			};
 			name = Debug;
 		};
-		697A136E0984C45889B5C304 /* Release */ = {
+		282B1AB52E519E4600344BED /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				BUNDLE_LOADER = "$(TEST_HOST)";
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
 				GENERATE_INFOPLIST_FILE = YES;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
-				SDKROOT = iphoneos;
+				IPHONEOS_DEPLOYMENT_TARGET = 18.5;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.example.KAiWaMemoUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/KAiWaMemo.app/KAiWaMemo";
+				TEST_TARGET_NAME = KAiWaMemo;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		282B1AC12E51A27500344BED /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 18.5;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.example.KAiWaMemoUnitTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/KAiWaMemo.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/KAiWaMemo";
+			};
+			name = Debug;
+		};
+		282B1AC22E51A27500344BED /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 18.5;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.example.KAiWaMemoUnitTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/KAiWaMemo.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/KAiWaMemo";
+				VALIDATE_PRODUCT = YES;
 			};
 			name = Release;
 		};
@@ -502,22 +589,6 @@
 			};
 			name = Debug;
 		};
-		EB53D80AE460FA4C45FCB697 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				BUNDLE_LOADER = "$(TEST_HOST)";
-				GENERATE_INFOPLIST_FILE = YES;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
-				SDKROOT = iphoneos;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/KAiWaMemo.app/KAiWaMemo";
-			};
-			name = Debug;
-		};
 		F9A3EFEC93B0F3F3D6F0B3C4 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -538,20 +609,20 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		17B31668DD4CCF4CA4E77295 /* Build configuration list for PBXNativeTarget "KAiWaMemoTests" */ = {
+		282B1AB32E519E4600344BED /* Build configuration list for PBXNativeTarget "KAiWaMemoUITests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				EB53D80AE460FA4C45FCB697 /* Debug */,
-				697A136E0984C45889B5C304 /* Release */,
+				282B1AB42E519E4600344BED /* Debug */,
+				282B1AB52E519E4600344BED /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Debug;
 		};
-		63C94596EB350BD037B52FEA /* Build configuration list for PBXNativeTarget "KAiWaMemoUITests" */ = {
+		282B1AC02E51A27500344BED /* Build configuration list for PBXNativeTarget "KAiWaMemoUnitTests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				4BD2CB0536C7646DBE21EEE3 /* Debug */,
-				39D0995C34F74853C51B196F /* Release */,
+				282B1AC12E51A27500344BED /* Debug */,
+				282B1AC22E51A27500344BED /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Debug;
