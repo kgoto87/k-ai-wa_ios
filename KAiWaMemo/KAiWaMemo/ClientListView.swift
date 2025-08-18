@@ -8,7 +8,7 @@ struct ClientListView: View {
         NavigationView {
             List {
                 ForEach(viewModel.clients) { client in
-                    NavigationLink(destination: EditClientView(client: client, viewModel: viewModel)) {
+                    NavigationLink(destination: ClientDetailView(client: client)) {
                         VStack(alignment: .leading) {
                             Text(client.name)
                                 .font(.headline)

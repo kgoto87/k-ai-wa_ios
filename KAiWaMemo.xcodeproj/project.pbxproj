@@ -7,8 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		0A55363A88480035BC181C90 /* FirebaseManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D7AB3F74EB1F808AAB12616 /* FirebaseManager.swift */; };
-		25AF8FFA6AED20C9805924D0 /* Client.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E17DD8252C071F18E6AF72C /* Client.swift */; };
 		282B1A9F2E5194E200344BED /* FirebaseAuth in Frameworks */ = {isa = PBXBuildFile; productRef = 282B1A9E2E5194E200344BED /* FirebaseAuth */; };
 		282B1AA12E5194F600344BED /* FirebaseFirestore in Frameworks */ = {isa = PBXBuildFile; productRef = 282B1AA02E5194F600344BED /* FirebaseFirestore */; };
 		282B1AA42E51951700344BED /* GoogleSignIn in Frameworks */ = {isa = PBXBuildFile; productRef = 282B1AA32E51951700344BED /* GoogleSignIn */; };
@@ -16,15 +14,24 @@
 		28D992132E5211CA007CEC51 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 28D992112E5211CA007CEC51 /* GoogleService-Info.plist */; };
 		28D992142E5211CA007CEC51 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 28D992112E5211CA007CEC51 /* GoogleService-Info.plist */; };
 		28D992152E5211CA007CEC51 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 28D992112E5211CA007CEC51 /* GoogleService-Info.plist */; };
-		38E3D9DE00EB646DB97784B8 /* ClientListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E5585670332FB3AE558166C /* ClientListView.swift */; };
-		65D0BFADAC94EA03F2C4A554 /* ClientViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB7C9B8B51E8FD146659D3D6 /* ClientViewModel.swift */; };
-		7587820DB876192F68DA2D2E /* EditClientView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19DD0E7163D3B940F6334B65 /* EditClientView.swift */; };
-		7EF0D52E6A1AA0B7D7C73AD8 /* ContentViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B815B402F497815C62BAAF2D /* ContentViewModel.swift */; };
-		A430A88F7910EDF1A7F83D04 /* AuthenticationViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F4573C799D920028E9BF3F4 /* AuthenticationViewModel.swift */; };
-		C627DCBAAC87BC060B6BA747 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A35C9BE9A3E913945DA1A788 /* ContentView.swift */; };
-		D9DC181CC0B67F0CB500B2DC /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 631AD0469461B78D00049A7A /* LoginView.swift */; };
-		DD56CE99C6BD8073CF6837D4 /* AddClientView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C91368415D00CF6BF1CD42D /* AddClientView.swift */; };
-		F3E33A6CAAB0273D1D224CF7 /* KAIWAMemoApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F886719C4E0BA7F1F1A0900 /* KAIWAMemoApp.swift */; };
+		28D9922A2E52D8B4007CEC51 /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28D992242E52D8B4007CEC51 /* LoginView.swift */; };
+		28D9922B2E52D8B4007CEC51 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28D9921F2E52D8B4007CEC51 /* ContentView.swift */; };
+		28D9922C2E52D8B4007CEC51 /* KAIWAMemoApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28D992232E52D8B4007CEC51 /* KAIWAMemoApp.swift */; };
+		28D9922D2E52D8B4007CEC51 /* ClientDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28D9921C2E52D8B4007CEC51 /* ClientDetailView.swift */; };
+		28D9922E2E52D8B4007CEC51 /* EditTalkMemoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28D992222E52D8B4007CEC51 /* EditTalkMemoView.swift */; };
+		28D9922F2E52D8B4007CEC51 /* AddClientView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28D992182E52D8B4007CEC51 /* AddClientView.swift */; };
+		28D992302E52D8B4007CEC51 /* ContentViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28D992202E52D8B4007CEC51 /* ContentViewModel.swift */; };
+		28D992312E52D8B4007CEC51 /* TalkMemoDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28D992262E52D8B4007CEC51 /* TalkMemoDetailView.swift */; };
+		28D992322E52D8B4007CEC51 /* TalkMemoListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28D992272E52D8B4007CEC51 /* TalkMemoListView.swift */; };
+		28D992332E52D8B4007CEC51 /* TalkMemoViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28D992282E52D8B4007CEC51 /* TalkMemoViewModel.swift */; };
+		28D992342E52D8B4007CEC51 /* Client.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28D9921B2E52D8B4007CEC51 /* Client.swift */; };
+		28D992352E52D8B4007CEC51 /* TalkMemo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28D992252E52D8B4007CEC51 /* TalkMemo.swift */; };
+		28D992362E52D8B4007CEC51 /* AddTalkMemoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28D992192E52D8B4007CEC51 /* AddTalkMemoView.swift */; };
+		28D992372E52D8B4007CEC51 /* FirebaseManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28D992162E52D8B4007CEC51 /* FirebaseManager.swift */; };
+		28D992382E52D8B4007CEC51 /* EditClientView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28D992212E52D8B4007CEC51 /* EditClientView.swift */; };
+		28D992392E52D8B4007CEC51 /* ClientListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28D9921D2E52D8B4007CEC51 /* ClientListView.swift */; };
+		28D9923A2E52D8B4007CEC51 /* AuthenticationViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28D9921A2E52D8B4007CEC51 /* AuthenticationViewModel.swift */; };
+		28D9923B2E52D8B4007CEC51 /* ClientViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28D9921E2E52D8B4007CEC51 /* ClientViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -45,22 +52,29 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		0C91368415D00CF6BF1CD42D /* AddClientView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddClientView.swift; sourceTree = "<group>"; };
-		19DD0E7163D3B940F6334B65 /* EditClientView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditClientView.swift; sourceTree = "<group>"; };
 		282B1A982E51944100344BED /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = Info.plist; path = KAiWaMemo/Info.plist; sourceTree = SOURCE_ROOT; };
 		282B1AAB2E519E4600344BED /* KAiWaMemoUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = KAiWaMemoUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		282B1ABA2E51A27500344BED /* KAiWaMemoUnitTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = KAiWaMemoUnitTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		28D992112E5211CA007CEC51 /* GoogleService-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
-		4E17DD8252C071F18E6AF72C /* Client.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Client.swift; sourceTree = "<group>"; };
-		4E5585670332FB3AE558166C /* ClientListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClientListView.swift; sourceTree = "<group>"; };
-		5D7AB3F74EB1F808AAB12616 /* FirebaseManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirebaseManager.swift; sourceTree = "<group>"; };
-		631AD0469461B78D00049A7A /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
+		28D992162E52D8B4007CEC51 /* FirebaseManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirebaseManager.swift; sourceTree = "<group>"; };
+		28D992182E52D8B4007CEC51 /* AddClientView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddClientView.swift; sourceTree = "<group>"; };
+		28D992192E52D8B4007CEC51 /* AddTalkMemoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddTalkMemoView.swift; sourceTree = "<group>"; };
+		28D9921A2E52D8B4007CEC51 /* AuthenticationViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthenticationViewModel.swift; sourceTree = "<group>"; };
+		28D9921B2E52D8B4007CEC51 /* Client.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Client.swift; sourceTree = "<group>"; };
+		28D9921C2E52D8B4007CEC51 /* ClientDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClientDetailView.swift; sourceTree = "<group>"; };
+		28D9921D2E52D8B4007CEC51 /* ClientListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClientListView.swift; sourceTree = "<group>"; };
+		28D9921E2E52D8B4007CEC51 /* ClientViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClientViewModel.swift; sourceTree = "<group>"; };
+		28D9921F2E52D8B4007CEC51 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		28D992202E52D8B4007CEC51 /* ContentViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentViewModel.swift; sourceTree = "<group>"; };
+		28D992212E52D8B4007CEC51 /* EditClientView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditClientView.swift; sourceTree = "<group>"; };
+		28D992222E52D8B4007CEC51 /* EditTalkMemoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditTalkMemoView.swift; sourceTree = "<group>"; };
+		28D992232E52D8B4007CEC51 /* KAIWAMemoApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KAIWAMemoApp.swift; sourceTree = "<group>"; };
+		28D992242E52D8B4007CEC51 /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
+		28D992252E52D8B4007CEC51 /* TalkMemo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TalkMemo.swift; sourceTree = "<group>"; };
+		28D992262E52D8B4007CEC51 /* TalkMemoDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TalkMemoDetailView.swift; sourceTree = "<group>"; };
+		28D992272E52D8B4007CEC51 /* TalkMemoListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TalkMemoListView.swift; sourceTree = "<group>"; };
+		28D992282E52D8B4007CEC51 /* TalkMemoViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TalkMemoViewModel.swift; sourceTree = "<group>"; };
 		65FD1D1C51951D85B1AB3108 /* KAiWaMemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = KAiWaMemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		7F4573C799D920028E9BF3F4 /* AuthenticationViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthenticationViewModel.swift; sourceTree = "<group>"; };
-		8F886719C4E0BA7F1F1A0900 /* KAIWAMemoApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KAIWAMemoApp.swift; sourceTree = "<group>"; };
-		A35C9BE9A3E913945DA1A788 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
-		B815B402F497815C62BAAF2D /* ContentViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentViewModel.swift; sourceTree = "<group>"; };
-		EB7C9B8B51E8FD146659D3D6 /* ClientViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClientViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFileSystemSynchronizedRootGroup section */
@@ -112,21 +126,36 @@
 			path = Resources;
 			sourceTree = "<group>";
 		};
-		90A0AA75E637BD606036CA6C /* KAiWaMemo */ = {
+		28D992172E52D8B4007CEC51 /* Firebase */ = {
+			isa = PBXGroup;
+			children = (
+				28D992162E52D8B4007CEC51 /* FirebaseManager.swift */,
+			);
+			path = Firebase;
+			sourceTree = "<group>";
+		};
+		28D992292E52D8B4007CEC51 /* KAiWaMemo */ = {
 			isa = PBXGroup;
 			children = (
 				282B1A982E51944100344BED /* Info.plist */,
-				0C91368415D00CF6BF1CD42D /* AddClientView.swift */,
-				7F4573C799D920028E9BF3F4 /* AuthenticationViewModel.swift */,
-				4E17DD8252C071F18E6AF72C /* Client.swift */,
-				4E5585670332FB3AE558166C /* ClientListView.swift */,
-				EB7C9B8B51E8FD146659D3D6 /* ClientViewModel.swift */,
-				A35C9BE9A3E913945DA1A788 /* ContentView.swift */,
-				B815B402F497815C62BAAF2D /* ContentViewModel.swift */,
-				19DD0E7163D3B940F6334B65 /* EditClientView.swift */,
-				8F886719C4E0BA7F1F1A0900 /* KAIWAMemoApp.swift */,
-				631AD0469461B78D00049A7A /* LoginView.swift */,
-				DAC5F0A6B55DCF8897F14BA1 /* Firebase */,
+				28D992172E52D8B4007CEC51 /* Firebase */,
+				28D992182E52D8B4007CEC51 /* AddClientView.swift */,
+				28D992192E52D8B4007CEC51 /* AddTalkMemoView.swift */,
+				28D9921A2E52D8B4007CEC51 /* AuthenticationViewModel.swift */,
+				28D9921B2E52D8B4007CEC51 /* Client.swift */,
+				28D9921C2E52D8B4007CEC51 /* ClientDetailView.swift */,
+				28D9921D2E52D8B4007CEC51 /* ClientListView.swift */,
+				28D9921E2E52D8B4007CEC51 /* ClientViewModel.swift */,
+				28D9921F2E52D8B4007CEC51 /* ContentView.swift */,
+				28D992202E52D8B4007CEC51 /* ContentViewModel.swift */,
+				28D992212E52D8B4007CEC51 /* EditClientView.swift */,
+				28D992222E52D8B4007CEC51 /* EditTalkMemoView.swift */,
+				28D992232E52D8B4007CEC51 /* KAIWAMemoApp.swift */,
+				28D992242E52D8B4007CEC51 /* LoginView.swift */,
+				28D992252E52D8B4007CEC51 /* TalkMemo.swift */,
+				28D992262E52D8B4007CEC51 /* TalkMemoDetailView.swift */,
+				28D992272E52D8B4007CEC51 /* TalkMemoListView.swift */,
+				28D992282E52D8B4007CEC51 /* TalkMemoViewModel.swift */,
 			);
 			name = KAiWaMemo;
 			path = KAiWaMemo/KAiWaMemo;
@@ -135,8 +164,8 @@
 		B15E7F61761CDD504D4C92D3 = {
 			isa = PBXGroup;
 			children = (
+				28D992292E52D8B4007CEC51 /* KAiWaMemo */,
 				28D992122E5211CA007CEC51 /* Resources */,
-				90A0AA75E637BD606036CA6C /* KAiWaMemo */,
 				282B1AAC2E519E4600344BED /* KAiWaMemoUITests */,
 				282B1ABB2E51A27500344BED /* KAiWaMemoUnitTests */,
 				B9AF82EA73E0E600DD822F43 /* Products */,
@@ -152,14 +181,6 @@
 				282B1ABA2E51A27500344BED /* KAiWaMemoUnitTests.xctest */,
 			);
 			name = Products;
-			sourceTree = "<group>";
-		};
-		DAC5F0A6B55DCF8897F14BA1 /* Firebase */ = {
-			isa = PBXGroup;
-			children = (
-				5D7AB3F74EB1F808AAB12616 /* FirebaseManager.swift */,
-			);
-			path = Firebase;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -324,17 +345,24 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				DD56CE99C6BD8073CF6837D4 /* AddClientView.swift in Sources */,
-				A430A88F7910EDF1A7F83D04 /* AuthenticationViewModel.swift in Sources */,
-				25AF8FFA6AED20C9805924D0 /* Client.swift in Sources */,
-				38E3D9DE00EB646DB97784B8 /* ClientListView.swift in Sources */,
-				65D0BFADAC94EA03F2C4A554 /* ClientViewModel.swift in Sources */,
-				C627DCBAAC87BC060B6BA747 /* ContentView.swift in Sources */,
-				7EF0D52E6A1AA0B7D7C73AD8 /* ContentViewModel.swift in Sources */,
-				7587820DB876192F68DA2D2E /* EditClientView.swift in Sources */,
-				0A55363A88480035BC181C90 /* FirebaseManager.swift in Sources */,
-				F3E33A6CAAB0273D1D224CF7 /* KAIWAMemoApp.swift in Sources */,
-				D9DC181CC0B67F0CB500B2DC /* LoginView.swift in Sources */,
+				28D9922A2E52D8B4007CEC51 /* LoginView.swift in Sources */,
+				28D9922B2E52D8B4007CEC51 /* ContentView.swift in Sources */,
+				28D9922C2E52D8B4007CEC51 /* KAIWAMemoApp.swift in Sources */,
+				28D9922D2E52D8B4007CEC51 /* ClientDetailView.swift in Sources */,
+				28D9922E2E52D8B4007CEC51 /* EditTalkMemoView.swift in Sources */,
+				28D9922F2E52D8B4007CEC51 /* AddClientView.swift in Sources */,
+				28D992302E52D8B4007CEC51 /* ContentViewModel.swift in Sources */,
+				28D992312E52D8B4007CEC51 /* TalkMemoDetailView.swift in Sources */,
+				28D992322E52D8B4007CEC51 /* TalkMemoListView.swift in Sources */,
+				28D992332E52D8B4007CEC51 /* TalkMemoViewModel.swift in Sources */,
+				28D992342E52D8B4007CEC51 /* Client.swift in Sources */,
+				28D992352E52D8B4007CEC51 /* TalkMemo.swift in Sources */,
+				28D992362E52D8B4007CEC51 /* AddTalkMemoView.swift in Sources */,
+				28D992372E52D8B4007CEC51 /* FirebaseManager.swift in Sources */,
+				28D992382E52D8B4007CEC51 /* EditClientView.swift in Sources */,
+				28D992392E52D8B4007CEC51 /* ClientListView.swift in Sources */,
+				28D9923A2E52D8B4007CEC51 /* AuthenticationViewModel.swift in Sources */,
+				28D9923B2E52D8B4007CEC51 /* ClientViewModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
