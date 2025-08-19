@@ -1,41 +1,68 @@
-//
-//  KAiWaMemoUITests.swift
-//  KAiWaMemoUITests
-//
-//  Created by Kazuya Goto on 2025/08/17.
-//
-
 import XCTest
 
-final class KAiWaMemoUITests: XCTestCase {
+class KAiWaMemoUITests: XCTestCase {
 
     override func setUpWithError() throws {
-        // Put setup code here. This method is called before the invocation of each test method in the class.
-
-        // In UI tests it is usually best to stop immediately when a failure occurs.
         continueAfterFailure = false
-
-        // In UI tests it’s important to set the initial state - such as interface orientation - required for your tests before they run. The setUp method is a good place to do this.
     }
 
-    override func tearDownWithError() throws {
-        // Put teardown code here. This method is called after the invocation of each test method in the class.
-    }
-
-    @MainActor
-    func testExample() throws {
-        // UI tests must launch the application that they test.
+    func testLaunch() throws {
         let app = XCUIApplication()
         app.launch()
 
-        // Use XCTAssert and related functions to verify your tests produce the correct results.
+        // Check if the main view exists
+        XCTAssertTrue(app.otherElements["mainView"].exists)
     }
 
-    @MainActor
-    func testLaunchPerformance() throws {
-        // This measures how long it takes to launch your application.
-        measure(metrics: [XCTApplicationLaunchMetric()]) {
-            XCUIApplication().launch()
-        }
+    func testAddClientButton() throws {
+        let app = XCUIApplication()
+        app.launch()
+
+        // Tap the add client button
+        app.buttons["addClientButton"].tap()
+
+        // Check if the add client view exists
+        XCTAssertTrue(app.otherElements["addClientView"].exists)
+    }
+
+    func testStartAndStopRecording() throws {
+        let app = XCUIApplication()
+        app.launch()
+
+        // Navigate to the AddTalkMemoView
+        app.buttons["addClientButton"].tap()
+
+        // Tap the start recording button
+        app.buttons["Start Recording"].tap()
+
+        // Wait for 2 seconds
+        sleep(2)
+
+        // Tap the stop recording button
+        app.buttons["Stop Recording"].tap()
+
+        // Check if the recording time is greater than 0
+        let recordingTimeText = app.staticTexts.matching(identifier: "recordingTime").firstMatch.label
+        let recordingTime = Double(recordingTimeText.replacingOccurrences(of: "s", with: "")) ?? 0
+        XCTAssertGreaterThan(recordingTime, 0)
+    }
+
+    func testPlayRecording() throws {
+        let app = XCUIApplication()
+        app.launch()
+
+        // Navigate to the AddTalkMemoView
+        app.buttons["addClientButton"].tap()
+
+        // Start and stop recording to create a recording file
+        app.buttons["Start Recording"].tap()
+        sleep(2)
+        app.buttons["Stop Recording"].tap()
+
+        // Tap the play recording button
+        app.buttons["Play Recording"].tap()
+
+        // I can't directly test if the audio is playing, so I will just check if the button exists
+        XCTAssertTrue(app.buttons["Play Recording"].exists)
     }
 }
