@@ -11,7 +11,6 @@
 		282B1AA12E5194F600344BED /* FirebaseFirestore in Frameworks */ = {isa = PBXBuildFile; productRef = 282B1AA02E5194F600344BED /* FirebaseFirestore */; };
 		282B1AA42E51951700344BED /* GoogleSignIn in Frameworks */ = {isa = PBXBuildFile; productRef = 282B1AA32E51951700344BED /* GoogleSignIn */; };
 		282B1AA62E51951700344BED /* GoogleSignInSwift in Frameworks */ = {isa = PBXBuildFile; productRef = 282B1AA52E51951700344BED /* GoogleSignInSwift */; };
-		28D992132E5211CA007CEC51 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 28D992112E5211CA007CEC51 /* GoogleService-Info.plist */; };
 		28D992142E5211CA007CEC51 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 28D992112E5211CA007CEC51 /* GoogleService-Info.plist */; };
 		28D992152E5211CA007CEC51 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 28D992112E5211CA007CEC51 /* GoogleService-Info.plist */; };
 		28D9922A2E52D8B4007CEC51 /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28D992242E52D8B4007CEC51 /* LoginView.swift */; };
@@ -35,13 +34,6 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		282B1AB12E519E4600344BED /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 340DFB4B42932E4E2C820200 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 61E90A174A038A45C4B64477;
-			remoteInfo = KAiWaMemo;
-		};
 		282B1ABE2E51A27500344BED /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 340DFB4B42932E4E2C820200 /* Project object */;
@@ -53,7 +45,6 @@
 
 /* Begin PBXFileReference section */
 		282B1A982E51944100344BED /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = Info.plist; path = KAiWaMemo/Info.plist; sourceTree = SOURCE_ROOT; };
-		282B1AAB2E519E4600344BED /* KAiWaMemoUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = KAiWaMemoUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		282B1ABA2E51A27500344BED /* KAiWaMemoUnitTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = KAiWaMemoUnitTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		28D992112E5211CA007CEC51 /* GoogleService-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		28D992162E52D8B4007CEC51 /* FirebaseManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirebaseManager.swift; sourceTree = "<group>"; };
@@ -78,18 +69,10 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFileSystemSynchronizedRootGroup section */
-		282B1AAC2E519E4600344BED /* KAiWaMemoUITests */ = {isa = PBXFileSystemSynchronizedRootGroup; explicitFileTypes = {}; explicitFolders = (); path = KAiWaMemoUITests; sourceTree = "<group>"; };
 		282B1ABB2E51A27500344BED /* KAiWaMemoUnitTests */ = {isa = PBXFileSystemSynchronizedRootGroup; explicitFileTypes = {}; explicitFolders = (); path = KAiWaMemoUnitTests; sourceTree = "<group>"; };
 /* End PBXFileSystemSynchronizedRootGroup section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		282B1AA82E519E4600344BED /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 		282B1AB72E51A27500344BED /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -166,7 +149,6 @@
 			children = (
 				28D992292E52D8B4007CEC51 /* KAiWaMemo */,
 				28D992122E5211CA007CEC51 /* Resources */,
-				282B1AAC2E519E4600344BED /* KAiWaMemoUITests */,
 				282B1ABB2E51A27500344BED /* KAiWaMemoUnitTests */,
 				B9AF82EA73E0E600DD822F43 /* Products */,
 				282B1A9D2E5194E200344BED /* Frameworks */,
@@ -177,7 +159,6 @@
 			isa = PBXGroup;
 			children = (
 				65FD1D1C51951D85B1AB3108 /* KAiWaMemo.app */,
-				282B1AAB2E519E4600344BED /* KAiWaMemoUITests.xctest */,
 				282B1ABA2E51A27500344BED /* KAiWaMemoUnitTests.xctest */,
 			);
 			name = Products;
@@ -186,29 +167,6 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		282B1AAA2E519E4600344BED /* KAiWaMemoUITests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 282B1AB32E519E4600344BED /* Build configuration list for PBXNativeTarget "KAiWaMemoUITests" */;
-			buildPhases = (
-				282B1AA72E519E4600344BED /* Sources */,
-				282B1AA82E519E4600344BED /* Frameworks */,
-				282B1AA92E519E4600344BED /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				282B1AB22E519E4600344BED /* PBXTargetDependency */,
-			);
-			fileSystemSynchronizedGroups = (
-				282B1AAC2E519E4600344BED /* KAiWaMemoUITests */,
-			);
-			name = KAiWaMemoUITests;
-			packageProductDependencies = (
-			);
-			productName = KAiWaMemoUITests;
-			productReference = 282B1AAB2E519E4600344BED /* KAiWaMemoUITests.xctest */;
-			productType = "com.apple.product-type.bundle.ui-testing";
-		};
 		282B1AB92E51A27500344BED /* KAiWaMemoUnitTests */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = 282B1AC02E51A27500344BED /* Build configuration list for PBXNativeTarget "KAiWaMemoUnitTests" */;
@@ -265,10 +223,6 @@
 				LastSwiftUpdateCheck = 1640;
 				LastUpgradeCheck = 1430;
 				TargetAttributes = {
-					282B1AAA2E519E4600344BED = {
-						CreatedOnToolsVersion = 16.4;
-						TestTargetID = 61E90A174A038A45C4B64477;
-					};
 					282B1AB92E51A27500344BED = {
 						CreatedOnToolsVersion = 16.4;
 						TestTargetID = 61E90A174A038A45C4B64477;
@@ -293,7 +247,6 @@
 			projectRoot = "";
 			targets = (
 				61E90A174A038A45C4B64477 /* KAiWaMemo */,
-				282B1AAA2E519E4600344BED /* KAiWaMemoUITests */,
 				282B1AB92E51A27500344BED /* KAiWaMemoUnitTests */,
 			);
 		};
@@ -308,14 +261,6 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		282B1AA92E519E4600344BED /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				28D992132E5211CA007CEC51 /* GoogleService-Info.plist in Resources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 		282B1AB82E51A27500344BED /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -327,13 +272,6 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
-		282B1AA72E519E4600344BED /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 		282B1AB62E51A27500344BED /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -369,11 +307,6 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		282B1AB22E519E4600344BED /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = 61E90A174A038A45C4B64477 /* KAiWaMemo */;
-			targetProxy = 282B1AB12E519E4600344BED /* PBXContainerItemProxy */;
-		};
 		282B1ABF2E51A27500344BED /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = 61E90A174A038A45C4B64477 /* KAiWaMemo */;
@@ -382,56 +315,6 @@
 /* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
-		282B1AB42E519E4600344BED /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
-				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
-				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
-				ENABLE_USER_SCRIPT_SANDBOXING = YES;
-				GCC_C_LANGUAGE_STANDARD = gnu17;
-				GCC_PREPROCESSOR_DEFINITIONS = (
-					"DEBUG=1",
-					"$(inherited)",
-				);
-				GENERATE_INFOPLIST_FILE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 18.5;
-				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
-				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.example.KAiWaMemoUITests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
-				SWIFT_EMIT_LOC_STRINGS = NO;
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_TARGET_NAME = KAiWaMemo;
-			};
-			name = Debug;
-		};
-		282B1AB52E519E4600344BED /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
-				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
-				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
-				ENABLE_USER_SCRIPT_SANDBOXING = YES;
-				GCC_C_LANGUAGE_STANDARD = gnu17;
-				GENERATE_INFOPLIST_FILE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 18.5;
-				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
-				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.example.KAiWaMemoUITests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_EMIT_LOC_STRINGS = NO;
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_TARGET_NAME = KAiWaMemo;
-				VALIDATE_PRODUCT = YES;
-			};
-			name = Release;
-		};
 		282B1AC12E51A27500344BED /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -640,15 +523,6 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		282B1AB32E519E4600344BED /* Build configuration list for PBXNativeTarget "KAiWaMemoUITests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				282B1AB42E519E4600344BED /* Debug */,
-				282B1AB52E519E4600344BED /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Debug;
-		};
 		282B1AC02E51A27500344BED /* Build configuration list for PBXNativeTarget "KAiWaMemoUnitTests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
