@@ -19,19 +19,22 @@ struct TalkMemoDetailView: View {
         }
         .padding()
         .navigationTitle("Talk Memo Details")
-        .navigationBarItems(trailing: HStack {
-            Button(action: {
-                isEditingMemo.toggle()
-            }) {
-                Image(systemName: "pencil")
+        .navigationBarItems(trailing: 
+            HStack {
+                Button(action: {
+                    isEditingMemo.toggle()
+                }) {
+                    Image(systemName: "pencil")
+                }
+                Button(action: {
+                    viewModel.deleteTalkMemo(memo: memo)
+                    presentationMode.wrappedValue.dismiss()
+                }) {
+                    Image(systemName: "trash")
+                }
             }
-            Button(action: {
-                viewModel.deleteTalkMemo(memo: memo)
-                presentationMode.wrappedValue.dismiss()
-            }) {
-                Image(systemName: "trash")
-            }
-        })
+            .zIndex(1) // Add a zIndex to the navigation bar items
+        )
         .sheet(isPresented: $isEditingMemo) {
             EditTalkMemoView(memo: memo)
         }

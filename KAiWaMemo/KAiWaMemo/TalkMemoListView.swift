@@ -3,11 +3,13 @@ import SwiftUI
 struct TalkMemoListView: View {
     @StateObject private var viewModel = TalkMemoViewModel()
     @State private var isAddingMemo = false
+    @State private var searchText = ""
     var clientID: String
 
     var body: some View {
-        NavigationView {
-            List(viewModel.talkMemos) {
+        VStack {
+            SearchBar(text: $searchText)
+            List(viewModel.talkMemos.filter { searchText.isEmpty ? true : $0.title.contains(searchText) || $0.content.contains(searchText) || $0.summary.contains(searchText) || $0.topics.contains(where: { $0.contains(searchText) }) }) {
                 memo in
                 NavigationLink(destination: TalkMemoDetailView(memo: memo)) {
                     VStack(alignment: .leading) {
@@ -16,18 +18,21 @@ struct TalkMemoListView: View {
                     }
                 }
             }
-            .navigationTitle("Talk Memos")
-            .navigationBarItems(trailing: Button(action: {
+        }
+        .navigationTitle("Talk Memos")
+        .navigationBarItems(trailing: 
+            Button(action: {
                 isAddingMemo.toggle()
             }) {
                 Image(systemName: "plus")
-            })
-            .sheet(isPresented: $isAddingMemo) {
-                AddTalkMemoView(clientID: clientID)
             }
-            .onAppear {
-                viewModel.fetchTalkMemos(clientID: clientID)
-            }
+            .accessibility(identifier: "addMemoButton")
+        )
+        .sheet(isPresented: $isAddingMemo) {
+            AddTalkMemoView(clientID: clientID)
+        }
+        .onAppear {
+            viewModel.fetchTalkMemos(clientID: clientID)
         }
     }
 }

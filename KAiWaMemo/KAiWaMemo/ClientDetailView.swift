@@ -12,6 +12,7 @@ struct ClientDetailView: View {
             NavigationLink(destination: TalkMemoListView(clientID: client.id ?? "")) {
                 Text("View Talk Memos")
             }
+            .accessibility(identifier: "viewTalkMemosButton")
         }
         .navigationTitle("Client Details")
         .navigationBarItems(trailing: NavigationLink(destination: EditClientView(client: client, viewModel: viewModel)) {
